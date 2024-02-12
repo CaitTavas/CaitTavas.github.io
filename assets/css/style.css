@@ -5,7 +5,15 @@
     src: url('assets\fonts\Sora\static\Sora-Regular.ttf') format('truetype');
 }
 
-
+/* fa information https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_social_media_buttons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
 /* default: for phones */
 strong{
  color: red;   
@@ -15,13 +23,14 @@ html {
     font-family: courier, serif;
     width: 100%;
     padding: 0px;
-    overflow: hidden;
+    /* overflow: hidden; */
+    margin: 0px;
 }
 
 body{
     width: 100%;
     padding: 0px;
-    margin: 5px;
+    margin: 0px;
 }
 h1{
     background-color: red;
