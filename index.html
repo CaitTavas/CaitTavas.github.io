@@ -18,6 +18,9 @@
     <script src="assets\js\crthead.js"></script>
 
     <div class="content">
+    <img src="assets/img/CDJ.jpg" id="headerimage">
+    <caption>Cornell Data Journal; You can see me on the far right!</caption>
+
     <h2 class="personalport">Personal Portfolio</h2>
     <p>Currently a highly motivated and hardworking senior at <strong>Cornell University</strong> with a major 
       in Information Science concentrating in <strong>Data Science.</strong> I am currently looking for experience
@@ -28,10 +31,13 @@
       <h2>Notable Projects and Experience</h2>
       <!-- make js where i get all the h3 in the script, and then load it in -->
       <h3>Work Experience</h3>
+      <p><strong>Essen Medical</strong> - <i>New York, NY</i> - Administrative Assistant</p>  
         <div class="subsection">
-          <p><strong>Essen Medical</strong> - <i>New York, NY</i> - Administrative Assistant</p>
-          <p><i>Skills Utilized:</i> Microsoft Excel, </p>
-          <p><i>Summary: I worked as an administrative assistant for a healthcare company </i></p>
+          <img>
+          <div class="content_summary">
+          <p><i>Skills Utilized:</i> Intermediate Microsoft Excel - pivot tables, vlookup, Python - pandas</p>
+          <p><i>Summary:</i> I interned as an administrative assistant for a healthcare company focused on providing for underserved communities in the Bronx. There was a lack of staff capable of performing data analysis on call center, provider, and roster patients. Afterwards, I was able to introduce automation of reporting when I returned the year after. </p>
+          </div>
         </div>
 
       <h3>Academic Projects at Cornell University</h3>
@@ -42,7 +48,7 @@
 
         <div class="content_summary">
           <p><i>Skills and Concepts: Creating and training NN in Python using PyTorch, also utilized numpy</i></p>
-          <p><i>Summary:</i> More of an exploratory final project, we were building up to the usage of creating our own neural networks in Python. Choosing the IMDB data, where the input was a text review and the assigned label was 0 or 1 for positive, I utilized backpropogation, dropouts, and different outputs to create different NN to compare to a logistic regression baseline. Only running on 20 epochs as any further would be overfitting, I found a model that produced a 98% accuracy score on the training, and 84% on the test. </p>
+          <p><i>Summary:</i> More of an exploratory final project, we were building up to the usage of creating our own neural networks in Python. Choosing the IMDB data, where the input was a text review and the assigned label was 0 or 1 for positive, I utilized backpropogation, dropouts, and different outputs to create different NN to compare to a logistic regression baseline. Only running on 20 epochs as any further would be overfitting, I found a model that produced a 98% accuracy score on the training, and 84% on the test. The CNN turned out to not be the best model; and performed worse on the training set. </p>
         </div>
       </div>
 
@@ -56,6 +62,7 @@
         </div>
       </div>
 
+      <div class="hidden">
       <p><strong>Displaying Tompkins County</strong> - <i>Data-Driven Web Applications, INFO 3300</i></p>
       <div class="subsection">
         <svg id="bobMap" width=100%></svg>
@@ -66,14 +73,15 @@
           <p><i>Summary: </i></p>
         </div>
       </div>
+      </div>
         
       <p><strong>Factors Leading to False Incarcerations</strong> - <i>Intro to Data Science, INFO 2950</i></p>
       <div class="subsection">
         <img src="assets\img\Factors to False Incarcerations.JPG">
 
         <div class="content_summary">
-          <p><i>Skills and Concepts: </i></p>
-          <p><i>Summary: </i></p>
+          <p><i>Skills and Concepts: ETL, OLS, scikit-learn and bootstrapping</i></p>
+          <p><i>Summary: As my first introduction to data science, I first covered the basics of statistics, python, and basic interpretations of results. For the final group project, my group chose to examine the false incarceration data, and to see what factors would have a greater impact on tthe time it takes to get exonerated. We examined information such as race, state of crime, type of crime, and interactions between those variables. Displayed is the bootstrap of betas in a logistic regerssion model. While this helps to display the confidence interval, we can also see the large variation in betas across the races. </i></p>
         </div>
       </div>
 
@@ -81,20 +89,20 @@
       <p><strong>Project Lead</strong> - <i>Cornell Data Journal</i></p>
       <div class="subsection">
         <div>
-          <img src="assets\img\CDJ.JPG" alt="display of betas">
-          <caption>Cornell Data Journal; You can see me on the far right!</caption>
+          <img src="assets\img\CDJ_transport.JPG" alt="display of betas">
+          <caption>https://docs.google.com/presentation/d/1UPv17Uf51fR2w0pcRYC25EKAt_gOu4Q3qefJ9GzUtbg/edit#slide=id.p</caption>
         </div>
         <div class="content_summary">
-          <p><i>Skills and Concepts: </i></p>
-          <p><i>Summary: </i></p>
+          <p><i>Skills and Concepts: Project management, Application of general NLP methods</i></p>
+          <p><i>Summary: In this photo, I took a group photo with our r/Cornell Sentiment team, where we utilized NLP concepts to examine r/Cornell and specific topics of interest over the course of a year. For example, we examined transportation by searching for words related to transportation, and then determined the sentiment of those words. First, we used a python package called SpaCy, but after examining the outputs, we found that the model was not as accurate. We then manually labeled 800 data points (1/10 of our data) and then fit a kNN model. Afterwards, we plotted our results and found them to be more accurate. </i></p>
         </div>
       </div>
 
       <h3>Activities, Volunteer, and Interests</h3>
       <ul>
-        <li>Alpha Phi Omega: </li>
-        <li>14Strings:</li>
-        <li></li>
+        <li>Alpha Phi Omega: A national co-ed service fraternity where we engage in community service. Some examples of service could be finger knitting scarfs for the homeless, assisting other clubs with setup of their events, or even volunteering at the local thrift store. I took a leadership position to set up speed meetings or coffee chats for the brotherhood, and coordinating 2 larger fellowship events for the pledge for the semester. </li>
+        <li>14Strings: Learned how to play a Filipino instrument and performed in 2 concerts</li>
+        <li>Interests: Rock Climbing</li>
       </ul>
 
       <!-- create contact information js here -->
