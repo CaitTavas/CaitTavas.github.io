@@ -1,8 +1,16 @@
 const header = d3.select('body').append('header')
-                .attr('class','mainheader');
+                .attr('class','heroheader');
 
 // hero image elements
-header.append('h1').text('Caitlin Tavas');
+const hero_image = header.append('div')
+        .attr('class', 'hero-image');
+
+const hero_text = hero_image.append('div')
+        .attr('class', 'hero-text');
+
+hero_text.append('h1').text('Caitlin Tavas');
+hero_text.append('button').text('Learn More =>');
+
 
 // navigation elemeents
 const navigation = header.append('nav');
