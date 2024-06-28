@@ -1,6 +1,8 @@
 const header = d3.select('body').append('header')
                 .attr('class','heroheader');
 
+const navigation = header.append('nav');
+
 // hero image elements
 const hero_image = header.append('div')
         .attr('class', 'hero-image');
@@ -13,7 +15,6 @@ hero_text.append('button').text('Learn More =>');
 
 
 // navigation elemeents
-const navigation = header.append('nav');
 
 // const button = navigation.append('button');
 navigations = [
@@ -33,7 +34,7 @@ navigations_link = [
 for (let i = 0; i < navigations.length; i++){
     navigation.append('a')
             .attr('href', navigations_link[i])
-            .style('width', `${100/navigations.length}%`)
+            .style('width', `${70/navigations.length}%`)
             .text(navigations[i]);
 
 }

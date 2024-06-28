@@ -1,7 +1,7 @@
 const header = d3.select('body').append('header')
                 .attr('class','mainheader');
 
-// hero image elements
+// top text 
 header.append('h1').text('Caitlin Tavas');
 
 // navigation elemeents
