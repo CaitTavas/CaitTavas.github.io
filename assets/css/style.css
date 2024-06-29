@@ -23,7 +23,7 @@ html {
     font-family: sans-serif, courier, serif;
     width: 100%;
     padding: 0px;
-    /* overflow: hidden; */
+    overflow-x: hidden;
     margin: 0px;
 }
 
@@ -98,10 +98,20 @@ header {
 .hero-text {
   text-align: center;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+}
+
+h2 {
+    color:lightcoral;
+    border-bottom: 1px dashed; 
+    font-size: 2em;
+    /* for underline */
+    padding-bottom: 3px; 
+
+
 }
 @media only screen and (min-width: 600px){
     /* for tablets */
