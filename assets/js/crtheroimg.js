@@ -33,14 +33,14 @@ navigations = [
     'Home', 
     'Projects',
     'Experience', 
-    'Skills'
+    'Visualizations'
 ]
 
 navigations_link = [
     'index.html', 
     'proj.html',
     'exp.html',  
-    'skills.html'
+    'visual.html'
 ]
 
 for (let i = 0; i < navigations.length; i++){
@@ -50,6 +50,7 @@ for (let i = 0; i < navigations.length; i++){
             .text(navigations[i]);
 
 }
+
 
 // interaction
 var navigation_items = d3.select('nav').selectAll('a');
@@ -67,3 +68,4 @@ navigation_items.on('mouseout', function(){
     d3.select(this).style('background-color', main_background_color)
                     .style('color', main_text_color);
 });
+

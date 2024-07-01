@@ -17,14 +17,14 @@ navigations = [
     'Home', 
     'Projects',
     'Experience', 
-    'Skills'
+    'Visualizations'
 ]
 
 navigations_link = [
     'index.html', 
     'proj.html',
     'exp.html',  
-    'skills.html'
+    'visual.html'
 ]
 
 for (let i = 0; i < navigations.length; i++){
