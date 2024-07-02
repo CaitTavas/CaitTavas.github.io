@@ -117,10 +117,11 @@ h2 {
 /* flip card animations (projects) */
 .projectBox {
     background-color: transparent;
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    height: 300px;
     border: 1px solid #f1f1f1;
-    /* perspective: 1000px; Remove this if you don't want the 3D effect */
+    display: inline-grid;
+     perspective: 1000px;/* Remove this if you don't want the 3D effect */
   }
   
   /* This container is needed to position the front and back side */
@@ -129,7 +130,7 @@ h2 {
     width: 100%;
     height: 100%;
     text-align: center;
-    transition: transform 0.8s;
+    transition: transform 0.5s;
     transform-style: preserve-3d;
   }
   
@@ -151,15 +152,54 @@ h2 {
   .cardFrontSide {
     background-color: lightcoral;
     color: black;
+    border: solid;
+    border-radius:3px;
+    border-color: lightcoral;
   }
   
   /* Style the back side */
   .cardBackSide {
-    background-color: dodgerblue;
+    background-color: lightcoral;
     color: white;
     transform: rotateY(180deg);
+    text-align: left; 
+    font-size: smaller;
+  }
+  .cardBackSide p {
+    padding: 0 2% 0 2%;
   }
 
+.projGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    gap: 30px;
+}
+/* designing front side of card */
+.cardFrontSide img{
+  width:100%;
+  height: 100%;
+}
+.projectTitle {
+  position: absolute;
+  bottom:0 ; 
+  left: 12.5%;
+  width:75%;
+  background: lightcoral;
+  color: white;
+}
+.bpLine {
+  border-left: 0.5rem dotted lightcoral;
+  padding-left: 5%;
+}
+.learnMoreButton {
+  border: 1rem solid #fff3d8 ;
+  border-radius: 10px;
+  background-color: #fff3d8;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 @media only screen and (min-width: 600px){
     /* for tablets */
     body {
