@@ -18,7 +18,7 @@ navigations = [
     'Projects',
     'Experience', 
     'Visualizations', 
-    'About Me'
+    //'About Me'
 ]
 
 navigations_link = [
@@ -26,7 +26,7 @@ navigations_link = [
     'proj.html',
     'exp.html',  
     'visual.html',
-    'aboutme.html'
+    //'aboutme.html'
 ]
 
 for (let i = 0; i < navigations.length; i++){
