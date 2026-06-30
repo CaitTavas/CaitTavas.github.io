@@ -14,18 +14,20 @@ const navigation = header.append('nav');
 
 // const button = navigation.append('button');
 navigations = [
-    'Home', 
+    'Home',
     'Projects',
-    'Experience', 
-    'Visualizations', 
+    'Experience',
+    'Visualizations',
+    'Trips',
     //'About Me'
 ]
 
 navigations_link = [
-    'index.html', 
+    'index.html',
     'proj.html',
-    'exp.html',  
+    'exp.html',
     'visual.html',
+    'trips.html',
     //'aboutme.html'
 ]
 

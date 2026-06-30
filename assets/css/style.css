@@ -124,10 +124,10 @@ h2 {
 .projectBox {
     background-color: transparent;
     width: 100%;
-    height: 300px;
+    aspect-ratio: 1 / 1;
     border: 1px solid #f1f1f1;
     display: inline-grid;
-     perspective: 1000px;/* Remove this if you don't want the 3D effect */
+    perspective: 1000px;
   }
   
   /* This container is needed to position the front and back side */
@@ -206,6 +206,51 @@ h2 {
   bottom: 0;
   right: 0;
 }
+/* trips section */
+.tripsGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    gap: 20px;
+}
+
+.tripCard {
+    background-color: lightcoral;
+    color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.tripCard img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.tripInfo {
+    padding: 12px 15px;
+}
+
+.tripInfo h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.2em;
+    color: white;
+}
+
+.tripInfo p {
+    margin: 0;
+    font-size: 0.9em;
+    opacity: 0.9;
+}
+
+.tripDate {
+    font-size: 0.8em;
+    opacity: 0.75;
+    margin-top: 4px !important;
+}
+
 @media only screen and (min-width: 600px){
     /* for tablets */
     body {
@@ -259,6 +304,10 @@ h2 {
  }
  .projGrid {
     grid-template-columns: 1fr 1fr;
+ }
+
+ .tripsGrid {
+    grid-template-columns: 1fr 1fr 1fr;
  }
 
 }
