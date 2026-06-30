@@ -22,7 +22,7 @@ const hero_image_file = hero_text.append('img')
         .attr('height', 350);
 
 hero_text.append('h1').text('Caitlin Tavas');
-hero_text.append('p').text('Data Scientist interested in Healthcare and Natural Language Processing');
+hero_text.append('p').text('Data Engineer building AI-powered automation for Healthcare');
 // hero_text.append('button').text('Learn More =>');
 
 
