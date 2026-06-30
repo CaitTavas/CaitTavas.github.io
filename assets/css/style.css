@@ -2,7 +2,7 @@
     /* fonts via google sora */
     font-family: 'Sora'; 
     /* https://fonts.google.com/specimen/Sora */
-    src: url('assets\fonts\Sora\static\Sora-Regular.ttf') format('truetype');
+    src: url('assets/fonts/Sora/static/Sora-Regular.ttf') format('truetype');
 }
 
 /* fa information https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_social_media_buttons */

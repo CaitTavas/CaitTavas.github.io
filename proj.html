@@ -2,16 +2,20 @@
 <html>
     <head>
         <!--  -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Caitlin Tavas</title>
         <!-- styles -->
-        <link href = "assets\css\style.css" rel="stylesheet">
+        <link href = "assets/css/style.css" rel="stylesheet">
+        <!-- icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- js support packages -->
         <script src="https://d3js.org/d3.v7.min.js"></script>
         <script src="https://d3js.org/topojson.v3.min.js"></script>
-    
+
       </head>
     <body>
-        <script src="assets\js\crthead.js"></script>
+        <script src="assets/js/crthead.js"></script>
 
 
         <div class="content">
@@ -51,6 +55,22 @@
             <div class = 'projectBox'>
                 <div class = "flipCard">
                 <div class="cardFrontSide">
+                    <img src="assets/img/CDJ_transport.JPG"/>
+                    <h3 class="projectTitle">r/Cornell Sentiment</h3>
+                </div>
+                <div class="cardBackSide">
+                    <p>NLP Research Project</p>
+                    <p>Key Words: Reddit Scraping (PRAW), Sentiment Analysis, Topic Modeling</p>
+                    <p>Summary: Managed a team of 4 peers and a co-lead to analyze r/Cornell posts for negative sentiment topics using NLP. Scraped Reddit posts using praw in Google Colab, then created a 100-response survey to validate findings. Analyzed and presented results as a team at a symposium.</p>
+                    <button class="learnMoreButton">Learn More</button>
+                </div>
+
+                </div>
+            </div>
+
+            <div class = 'projectBox'>
+                <div class = "flipCard">
+                <div class="cardFrontSide">
                     <img src="assets/img/Barrage Z.png"/>
                     <h3 class="projectTitle">Barrage Survival Z</h3>
                 </div>
@@ -85,7 +105,7 @@
         </div>
 
 
-
+        <script src="assets/js/crtfoot.js"></script>
     </body>
 
 </html>
