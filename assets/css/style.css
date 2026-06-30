@@ -34,26 +34,28 @@ body{
 }
 h1{
     text-align: center;
-    font-size: 6em;
+    font-size: 2.2em;
     margin: 0px;
     margin-top: 10px;
 }
 
 nav {
-    width: 85%;
+    width: 100%;
     background: white;
-    height: 10%;
-    padding-left: 20%;
+    height: auto;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 nav a{
     display: inline-block;
     text-align: center;
     color:lightcoral;
-    height: 100%;
-    text-decoration: none; 
-    font-size: 20px;
-    padding-top: 30px;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 12px 10px;
 }
 .subsection img{
     width: 100%;
@@ -61,6 +63,10 @@ nav a{
 
 .hidden {
     display:none;
+}
+
+.content {
+    padding: 0 5%;
 }
 #headerimage{
     margin: 0 25%;
@@ -71,9 +77,9 @@ header {
     color: white;
 }
 .heroheader {
-    
+
   /* Set a specific height */
-  height: 80%;
+  min-height: 60vh;
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
@@ -85,7 +91,7 @@ header {
 .hero-image {
     background-color: lightcoral;
   /* Set a specific height */
-  height: 80%;
+  min-height: 60vh;
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
@@ -171,7 +177,7 @@ h2 {
 
 .projGrid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     padding: 10px;
     gap: 30px;
 }
@@ -228,14 +234,31 @@ h2 {
     column-gap: 5%;
 }
  .subsection img{
-    width: 100%; 
+    width: 100%;
  }
  .contentsummary{
-    width: 100%; 
+    width: 100%;
  }
  body, html {
     height: 100%;
 }
 
+ h1 {
+    font-size: 6em;
+ }
+ nav {
+    width: 85%;
+    height: 10%;
+    padding-left: 20%;
+    display: block;
+ }
+ nav a {
+    height: 100%;
+    font-size: 20px;
+    padding: 30px 0 0 0;
+ }
+ .projGrid {
+    grid-template-columns: 1fr 1fr;
+ }
 
 }
