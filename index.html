@@ -2,132 +2,31 @@
 
 <html lang="en">
   <head>
-    <!--  -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Caitlin Tavas</title>
-    <!-- styles -->
-    <link href = "assets/css/style.css" rel="stylesheet">
-    <!-- favicon -->
+    <title>Portfolio</title>
+    <link href="assets/css/style.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="assets/img/Headshot.png">
-    <!-- icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- js support packages -->
     <script src="https://d3js.org/d3.v7.min.js"></script>
-   	<script src="https://d3js.org/topojson.v3.min.js"></script>
-
+    <script src="https://d3js.org/topojson.v3.min.js"></script>
   </head>
   <body>
 
     <script src="assets/js/crtheroimg.js"></script>
 
     <div class="content">
-    <!-- <img src="assets/img/Headshot.png" id="headerimage"> -->
 
-    <h2 class="personalport">Background & Interests</h2>
-    <p>I'm a <strong>Junior Data Engineer</strong> at <strong>eCares Ventures</strong>, based in <strong>Los Angeles, CA</strong>,
-      where I build AI-powered automation and data pipelines using <strong>Python</strong>, <strong>Azure Databricks</strong>, OCR, and LLMs.
-      I hold a Master's in Information Science from <strong>Cornell University</strong>, concentrating in
-      <strong>Data Science</strong>. Experienced in <strong>Python</strong> and DS packages
-      like scikit-learn, numpy, pandas, and pytorch, I enjoy applying machine learning to real-world problems, from
-      vision-language models to large-scale ETL pipelines.
-      Click through the navigation to see more in detail, but here's the breakdown:</p>
+      <h2>Background &amp; Interests</h2>
+      <p>I'm a <strong>Data Engineer</strong> building AI-powered automation and data pipelines using
+        <strong>Python</strong>, <strong>Azure Databricks</strong>, OCR, and LLMs.
+        I hold a Master's in Information Science from <strong>Cornell University</strong>, concentrating in
+        <strong>Data Science</strong>. Experienced with scikit-learn, numpy, pandas, and pytorch, I enjoy
+        applying machine learning to real-world problems — from vision-language models to large-scale ETL pipelines.
+        Click through the navigation to learn more.</p>
 
-      <h2>Notable Projects and Experience</h2>
-      <!-- make js where i get all the h3 in the script, and then load it in -->
-      <h3>Work Experience</h3>
-      <p><strong>eCares Ventures</strong> - <i>New York, NY</i> - Junior Data Engineer</p>
-        <div class="bpLine">
-          <p><i>Skills Utilized:</i> AI/LLM Automation, ETL Pipelines, OCR & Document Processing, Azure Databricks, Python (Pandas, Selenium)</p>
-          <p><i>Summary:</i> I design and deploy AI-powered automation for a healthcare administration company, including a vision-language model solution that classifies and routes incoming mail scans, increasing mail output 10x. I also built a configuration-driven ETL pipeline that normalizes provider roster data across 13 insurance companies and an OCR/LLM document processing system that cut credentialing time from hours to minutes per provider.</p>
-        </div>
-
-      <h3>Academic Projects at Cornell University</h3>
-
-      <p><strong>Using a CNN to Predict Positivity in IMDB Reviews</strong> - <i>Data Analytics for InfoSci, INFO 3950</i></p>
-      <div class="subsection">
-        <img src="assets/img/Sigmoid.JPG" alt="Sigmoid output plot from CNN sentiment model">
-
-        <div class="content_summary">
-          <p><i>Skills and Concepts: Creating and training NN in Python using PyTorch, also utilized numpy</i></p>
-          <p><i>Summary:</i> More of an exploratory final project, we were building up to the usage of creating our own neural networks in Python. Choosing the IMDB data, where the input was a text review and the assigned label was 0 or 1 for positive, I utilized backpropogation, dropouts, and different outputs to create different NN to compare to a logistic regression baseline. Only running on 20 epochs as any further would be overfitting, I found a model that produced a 98% accuracy score on the training, and 84% on the test. The CNN turned out to not be the best model; and performed worse on the training set. </p>
-        </div>
-      </div>
-
-      <p><strong>Examining Impact of Seneca Falls Convention</strong> - <i>Text Mining for Hist and Lit, INFO 3350</i></p>
-      <div class="subsection">
-        <img src="assets/img/PCA_SenecaFalls.JPG" alt="PCA plot of word embeddings from Seneca Falls Convention text analysis">
-
-        <div class="content_summary">
-          <p><i>Skills and Concepts: NLP in Python using SpaCy</i></p>
-          <p><i>Summary:</i> For a final project in my Text Mining for History and Literature class, we were given free reign to pick a point of interest given a historical American corpus between the early 1700s and late 1800s. I isolated my interest to women's history and the Seneca Falls Convention, and decided to focus on the impact of social events on the general corpus. I first researched the Seneca Falls itself, and using course concepts I created word embeddings in the SpaCy Python package for the corpus before and after the convention for both male and female authors to create topic models and vector similarities.  Unfortunately, there was no statistcal significance in the vector similarities themselves, but there was a clear change in the t-test values. </p>
-        </div>
-      </div>
-
-      <div class="hidden">
-      <p><strong>Displaying Tompkins County</strong> - <i>Data-Driven Web Applications, INFO 3300</i></p>
-      <div class="subsection">
-        <svg id="bobMap" width=100%></svg>
-        <script src="assets/js/bobross.js"></script>
-
-        <div class="content_summary">
-          <p><i>Skills and Concepts: </i></p>
-          <p><i>Summary: </i></p>
-        </div>
-      </div>
-      </div>
-        
-      <p><strong>Factors Leading to False Incarcerations</strong> - <i>Intro to Data Science, INFO 2950</i></p>
-      <div class="subsection">
-        <img src="assets/img/Factors-to-False-Incarcerations.JPG" alt="Bootstrap distribution of regression betas for false incarceration factors">
-
-        <div class="content_summary">
-          <p><i>Skills and Concepts: ETL, OLS, scikit-learn and bootstrapping</i></p>
-          <p><i>Summary: As my first introduction to data science, I first covered the basics of statistics, python, and basic interpretations of results. For the final group project, my group chose to examine the false incarceration data, and to see what factors would have a greater impact on tthe time it takes to get exonerated. We examined information such as race, state of crime, type of crime, and interactions between those variables. Displayed is the bootstrap of betas in a logistic regerssion model. While this helps to display the confidence interval, we can also see the large variation in betas across the races. </i></p>
-        </div>
-      </div>
-
-      <h3>Leadership Experience</h3>
-      <p><strong>Project Lead</strong> - <i>Cornell Data Journal</i></p>
-      <div class="subsection">
-        <div>
-          <img src="assets/img/CDJ_transport.JPG" alt="display of betas">
-          <caption>https://docs.google.com/presentation/d/1UPv17Uf51fR2w0pcRYC25EKAt_gOu4Q3qefJ9GzUtbg/edit#slide=id.p</caption>
-        </div>
-        <div class="content_summary">
-          <p><i>Skills and Concepts: Project management, Application of general NLP methods</i></p>
-          <p><i>Summary: In this photo, I took a group photo with our r/Cornell Sentiment team, where we utilized NLP concepts to examine r/Cornell and specific topics of interest over the course of a year. For example, we examined transportation by searching for words related to transportation, and then determined the sentiment of those words. First, we used a python package called SpaCy, but after examining the outputs, we found that the model was not as accurate. We then manually labeled 800 data points (1/10 of our data) and then fit a kNN model. Afterwards, we plotted our results and found them to be more accurate. </i></p>
-        </div>
-      </div>
-
-      <h3>Activities, Volunteer, and Interests</h3>
-      <ul>
-        <li>Alpha Phi Omega: A national co-ed service fraternity where we engage in community service. Some examples of service could be finger knitting scarfs for the homeless, assisting other clubs with setup of their events, or even volunteering at the local thrift store. I took a leadership position to set up speed meetings or coffee chats for the brotherhood, and coordinating 2 larger fellowship events for the pledge for the semester. </li>
-        <li>14Strings: Learned how to play a Filipino instrument and performed in 2 concerts</li>
-        <li>Interests: Rock Climbing</li>
-      </ul>
-
-      <!-- create contact information js here -->
-      <!-- 
-
-        Personal Website
-Should have past projects - display of skills
-	- Python 
-		○ Intro to data science
-		○ NLP class thing -> showing the EVR and other topic models 
-    ○ Training a CNN
-	- R
-  ○ Could just make something interesting?? Spotify interaction
-  ○ Show inequality graph or something about greenhouse gas emissions 
-- Javascript
-  ○ Could also make something interesting with grocery lists?? Or include the project 3 
-- Tableau 
-  ○ Make something in tableau + display it 
-
-
-Should have internship experience? 
-       -->
     </div>
+
     <script src="assets/js/crtfoot.js"></script>
   </body>
 </html>
