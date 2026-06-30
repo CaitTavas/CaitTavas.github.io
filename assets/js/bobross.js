@@ -19,8 +19,7 @@
          d['season_range'] = parseInt(d['season'] / split_season)
          
      });
-     console.log(bobRoss);
-     
+
      // getting sums for each column
      var colSums = {};
      bobRoss.forEach(function(row) {
@@ -30,9 +29,8 @@
              }
          }
      });
-     console.log(colSums);
-     
-     // attempting to just plot the top n common to avoid clutter 
+
+     // attempting to just plot the top n common to avoid clutter
      const sort_arr = [];
      for (var p in colSums){
          if ((p !== "season") && (p !== "season_range")){
@@ -41,7 +39,6 @@
      }
      sort_arr.sort((a,b) => {return b.value-a.value});
      const top_values = sort_arr.slice(0, n);
-     console.log(top_values);
      const top_map = top_values.map(({key})=>key);
      // or maybe allow the user to show how many?
      // processing data and grouping by season 
@@ -58,17 +55,14 @@
      }, {});
      var groupSeasonDF = Object.values(groupedData);
 
-     console.log(groupSeasonDF);
      // first col should be season
      // top row should be those attributes wanted and then sums per season
      // stack the data
      var stackedData = d3.stack()
          .keys(top_map)
          (groupSeasonDF);
-     
-     console.log('stack', stackedData);
-     
-     // create a color chart based top_values 
+
+     // create a color chart based top_values
      const colorScale = d3.scaleOrdinal()
          .domain(top_map)
          .range(d3.schemeCategory10);
@@ -162,11 +156,10 @@
 
          const visibleData = stackedData.filter(stack =>{
              const key = stack.key;
-             console.log(key);
              const isVisible = svg.select(`.area#${key}`).style("opacity") === "1";
              return isVisible;
          });
-         console.log(visibleData);
+
          // min values
          const min_values = visibleData.flatMap(stack => stack.map(d => d[0]))
          // max values
