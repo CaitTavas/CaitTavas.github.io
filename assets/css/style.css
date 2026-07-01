@@ -75,6 +75,9 @@ nav a{
 header {
     background-color: lightcoral;
     color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 .heroheader {
 
@@ -175,11 +178,30 @@ h2 {
     padding: 0 2% 0 2%;
   }
 
-.projGrid {
-    display: grid;
-    grid-template-columns: 1fr;
+.timeline {
+    display: flex;
+    flex-direction: column;
     padding: 10px;
-    gap: 30px;
+    margin: 0 5%;
+    gap: 40px;
+}
+.timelineItem {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    column-gap: 12px;
+    align-items: start;
+}
+.timelineDate {
+    position: sticky;
+    top: 15px;
+    padding-top: 8px;
+    color: lightcoral;
+    font-weight: bold;
+    font-size: 0.75em;
+    line-height: 1.2;
+}
+.timelineItem .projectBox {
+    max-width: 260px;
 }
 /* designing front side of card */
 .cardFrontSide img{
@@ -302,8 +324,16 @@ h2 {
     font-size: 20px;
     padding: 30px 0 0 0;
  }
- .projGrid {
-    grid-template-columns: 1fr 1fr;
+ .timelineItem {
+    grid-template-columns: 140px 1fr;
+    column-gap: 30px;
+ }
+ .timelineDate {
+    top: 30px;
+    font-size: 1em;
+ }
+ .timelineItem .projectBox {
+    max-width: 320px;
  }
 
  .tripsGrid {
